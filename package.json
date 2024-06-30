@@ -1,0 +1,11 @@
+{
+  "name": "mf-wc-bug-research",
+  "version": "1.0.0",
+  "description": "The purpose of this repository is to find why in NG17, there is a bug with module federation and web components when the Shell loads the MFEs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
