@@ -1,0 +1,32 @@
+<div id="root" class="card">
+  Shell running Angular {{ version }}
+  <!--
+    The 'my-mfe-element' web component was created by using Angular custom elements
+    to convert an Angular component into a web component. In doing so, Angular will
+    create kebab cased attributes from the Angular inputs as well as properties
+    with the original casing used on the Angular component.
+
+    For this example, this means that the my-mfe-element web component has an
+    attribute named 'input-text' and a property named 'inputText'.
+
+    As such, there are several ways to pass input to the web component.
+
+    Using the attribute:
+    1) input-text="Hello from shell!"
+    2) [attr.input-text]="'Hello from shell!'"
+    3) [attr.input-text]="someVariableToBindTo"
+
+    Using the property:
+    1) [inputText]="'Hello from shell!'"
+    2) [inputText]="someVariableToBindTo"
+
+    For more info about "Attributes and properties" see
+    https://javascript.info/dom-attributes-and-properties
+  -->
+  <my-mfe-element
+    input-text="Hello from shell!"
+    (message-sent)="onMessageSent($event)"
+  ></my-mfe-element>
+  <p>Message received by the shell from the Web component:</p>
+  <p>{{ message }}</p>
+</div>

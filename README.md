@@ -7,3 +7,4 @@ the console when the MFE is loaded and every time a MFE performs a navigations.
 # Start
 
 Every project can be started with `npm run start`.
+
